@@ -1,0 +1,17 @@
+* これは何？
+lineでopenAIのdavinciと会話できるツールです
+
+* 使い方
+1. line developの設定をする
+2. AWS ECRにこのリポジトリから生成したコンテナをアップロードする
+3. AWS lambdaをECRから作成する
+4. 次を環境変数に指定する
+   - DEEPL_API (deeplのapiキー)
+   - OPENAI_KEY (openAIのapiキー
+   - LINE_CHANNEL_ACCESS_TOKEN (lineのaccess token)
+   - LINE_CHANNEL_SECRET (lineのsecret)
+5. AWS API GATEWAYの設定をする
+  
+それぞれのやり方が分からない場合は下記サイトを参考にせよ。
+http://eightt.net/wordpress/ja/line-talk-with-gpt-3/
+
